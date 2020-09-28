@@ -9,10 +9,10 @@ Applications
 Probability of collision of two OTPs
 
 
-    The length of OTP is 6 and the set size of all possible characters in the OTP is 62. So the total number of possible sets of the pair of OTPs are 6212.
+    The length of OTP is 6 and the set size of all possible characters in the OTP is 62. So the total number of possible sets of the pair of OTPs are 62^12.
     Some of them are – [{aaaaaa, aaaaaa}, {aaaaaa, aaaaab},…..{456789, 456788}, {456789, 456789}]
-    But the possible sets of equal pair of OTPs are:626. Some of them are – [{aaaaaa, aaaaaa}, {aaaaab, aaaaab},…..{456788, 456788}, {456789, 456789}]
+    But the possible sets of equal pair of OTPs are:62^6. Some of them are – [{aaaaaa, aaaaaa}, {aaaaab, aaaaab},…..{456788, 456788}, {456789, 456789}]
     Hence the probability of collision of two OTPs is:
-    626 / 6212 = 1 / 626 = 1 / 56800235584 = 1.7605561-11
+    62^6 / 62^12 = 1 / 62^6 = 1 / 56800235584 = 1.7605561^-11
 
 Time Complexity: O(N), where N = number of characters in our OTP
